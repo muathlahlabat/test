@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>دكتورسات</title>
   <style>
     body {
@@ -20,11 +20,11 @@
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
-   .logo {
+    .logo {
       width: 120px;
       height: auto;
       margin-bottom: 20px;
-}
+    }
     h1 {
       color: #2c3e50;
       font-size: 24px;
@@ -36,31 +36,45 @@
       line-height: 1.7;
       color: #333;
     }
-.button {
-  display: inline-block;
-  width: 85%;
-  max-width: 100%;
-  margin: 10px auto;
-  padding: 14px 20px;
-  font-size: 17px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-    .whatsapp { background: #25D366; }
-    .whatsapp:hover { background: #1ebe5d; }
-
-    .messenger { background: #0084FF; }
-    .messenger:hover { background: #006fe0; }
-
-    .telegram { background: #0088cc; }
-    .telegram:hover { background: #007ab8; }
-
+    .button {
+      display: inline-block;
+      width: 85%;
+      max-width: 100%;
+      margin: 10px auto;
+      padding: 14px 20px;
+      font-size: 17px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .button img {
+      vertical-align: middle;
+      margin-left: 8px;
+      width: 22px;
+      height: auto;
+    }
+    .whatsapp {
+      background: #25D366;
+    }
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+    .messenger {
+      background: #0084FF;
+    }
+    .messenger:hover {
+      background: #006fe0;
+    }
+    .telegram {
+      background: #0088cc;
+    }
+    .telegram:hover {
+      background: #007ab8;
+    }
     @media (max-width: 500px) {
       .card {
         padding: 25px 15px;
@@ -76,22 +90,30 @@
 </head>
 <body>
   <div class="card">
-<img src="https://i.imgur.com/2NNxykq.jpeg" alt="شعار متجر دكتورسات" class="logo">
+    <img src="https://i.imgur.com/2NNxykq.jpeg" alt="شعار متجر دكتورسات" class="logo" />
     <h1>🎉 أهلاً بك في متجر دكتورسات</h1>
     <p>
-      هل تريد شراء جهاز أندرويد أو الاستفسار عن الخدمات التي نقدمها؟<br>
+      هل تريد شراء جهاز أندرويد أو الاستفسار عن الخدمات التي نقدمها؟<br />
       ما عليك إلا اختيار وسيلة التواصل المناسبة لك:
     </p>
 
     <!-- زر واتساب -->
-    <a class="button whatsapp" href="https://wa.me/970569203025?text=مرحبا%20اريد%20معرفة%20الخدمات%20التي%20يقدمها%20متجر%20دكتورسات" target="_blank">💬 تواصل عبر WhatsApp</a>
+    <a class="button whatsapp" href="https://wa.me/970569203025?text=مرحبا%20اريد%20معرفة%20الخدمات%20التي%20يقدمها%20متجر%20دكتورسات" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب" />
+      تواصل عبر WhatsApp
+    </a>
 
     <!-- زر ماسنجر -->
-    <a class="button messenger" href="https://m.me/drsatellite.nablus" target="_blank">📩 تواصل عبر Messenger</a>
+    <a class="button messenger" href="https://m.me/drsatellite.nablus" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_Messenger_logo_2020.svg" alt="ماسنجر" />
+      تواصل عبر Messenger
+    </a>
 
     <!-- زر تيليجرام -->
-    <a class="button telegram" href="https://t.me/drnablus" target="_blank">✈️ تواصل عبر Telegram</a>
-
+    <a class="button telegram" href="https://t.me/drnablus" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="تيليجرام" />
+      تواصل عبر Telegram
+    </a>
   </div>
 </body>
 </html>
