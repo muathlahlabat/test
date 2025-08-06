@@ -6,50 +6,82 @@
   <title>دكتورسات</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+      background: #eef1f5;
       text-align: center;
-      padding: 50px;
+      padding: 30px;
+      margin: 0;
     }
     .card {
-      background: white;
-      padding: 30px;
-      max-width: 400px;
+      background: #ffffff;
+      padding: 30px 20px;
+      max-width: 420px;
       margin: auto;
       border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     h1 {
       color: #2c3e50;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
     p {
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      line-height: 1.7;
+      color: #333;
     }
-    a.button {
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 15px 25px;
-      border-radius: 8px;
+    .button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px 24px;
       font-size: 18px;
-      display: inline-block;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
       transition: background 0.3s ease;
     }
-    a.button:hover {
-      background: #1ebe5d;
+    .whatsapp { background: #25D366; }
+    .whatsapp:hover { background: #1ebe5d; }
+
+    .messenger { background: #0084FF; }
+    .messenger:hover { background: #006fe0; }
+
+    .telegram { background: #0088cc; }
+    .telegram:hover { background: #007ab8; }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 25px 15px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p, .button {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>🎉 أهلا بك في متجر دكتورسات</h1>
-    <p>هل تريد شراء جهاز اندرويد أو الاشتراك بإحدى باقاتنا؟
- ما عليك الا الضغط على الزر بالأسفل للتواصل معنا مباشرة عبر WhatsApp
-أو اضغط على الرابط
-https://wa.me/970569203025
-</p>
-    <a class="button" href="https://wa.me/970569203025?text=مرحبا%20اريد%20معرفة%20الخدمات%20التي%20يقدمها%20متجر%20دكتورسات" target="_blank">💬 تحدث معنا الآن</a>
+    <h1>🎉 أهلاً بك في متجر دكتورسات</h1>
+    <p>
+      هل تريد شراء جهاز أندرويد أو الاشتراك بإحدى باقاتنا؟<br>
+      ما عليك إلا اختيار وسيلة التواصل المناسبة لك:
+    </p>
+
+    <!-- زر واتساب -->
+    <a class="button whatsapp" href="https://wa.me/970569203025?text=مرحبا%20اريد%20معرفة%20الخدمات%20التي%20يقدمها%20متجر%20دكتورسات" target="_blank">💬 تواصل عبر WhatsApp</a>
+
+    <!-- زر ماسنجر -->
+    <a class="button messenger" href="https://m.me/drsatellite.nablus" target="_blank">📩 تواصل عبر Messenger</a>
+
+    <!-- زر تيليجرام -->
+    <a class="button telegram" href="https://t.me/drnablus" target="_blank">✈️ تواصل عبر Telegram</a>
+
   </div>
 </body>
 </html>
